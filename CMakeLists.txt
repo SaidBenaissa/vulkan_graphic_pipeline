@@ -17,7 +17,7 @@ find_package(glfw3 REQUIRED)
 find_package(Vulkan REQUIRED)
 
 # Add source files
-set(SOURCES src/main.cpp src/lve_window.cpp src/first_app.cpp src/lve_pipeline.cpp)
+set(SOURCES src/main.cpp src/lve_window.cpp src/first_app.cpp src/lve_pipeline.cpp src/lve_device.cpp)
 # Create executable
 add_executable(vulkan_example_1 ${SOURCES})
 

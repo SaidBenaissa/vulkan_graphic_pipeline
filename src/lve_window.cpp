@@ -27,5 +27,13 @@ namespace lve {
         return glfwWindowShouldClose(window);
     }
 
+    void LveWindow::createWindowSurface(VkInstance instance, VkSurfaceKHR *vkSurfaceKhr) {
+        if (glfwCreateWindowSurface(instance, window, nullptr, vkSurfaceKhr) != VK_SUCCESS) {
+            throw std::runtime_error("failed to create window surface!");
+        }
+
+    }
+
+
 }
 
